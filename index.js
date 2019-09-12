@@ -5,7 +5,7 @@ const app = express();
 const urlencodedParser = bodyParser.urlencoded({extended: false});
 
 app.get("/", urlencodedParser,function(request, response){ 
-    response.sendFile(__dirname + "/public/main.html");
+    response.sendFile(__dirname + "/main.html");
 });
 
 app.use("/game", function(request, response){
